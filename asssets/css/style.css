@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primary: #d8d5d5;
+    --color-primary-dark: #bbb8b8;
+    --color-secondary: #fff;
+    --color-tertiary: #0e970e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    background-color: var(--color-primary);
+}
+
+.container-principal {
+    max-width: 880px;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    margin: 3rem auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin-bottom: 7px;
+    font-size: 28px;
+    color: black;
+}
+
+.container-principal header {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+
+button {
+    padding: 5px;
+    width: 30px;
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #12c912;
+}
+
+button > i {
+    pointer-events: none;
+}
+
+input, select {
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary-dark);
+    background-color: var(--color-primary);
+}
+
+.esconder {
+    display: none;
+}
+
+#cadastro-tarefas, #edicao-tarefas {
+    padding: 10px;
+    border-bottom: 1px solid #d1d1d17c;
+}
+
+#cadastro-tarefas p, #edicao-tarefas p {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#input-add-tarefa, #input-edite-tarefa, #input-pesquisar-tarefa {
+    display: flex;
+}
+
+#input-add-tarefa input, #input-edite-tarefa input{
+    width: 300px;
+}
+
+#input-add-tarefa input, #input-edite-tarefa input, #input-pesquisar-tarefa input {
+    margin-right: 7px;
+}
+
+#cancelar-edicao {
+    margin-top: 7px;
+    width: 80px;
+}
+
+#ferramentas {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid #d1d1d17c;
+}
+
+#ferramentas h4 {
+    margin-bottom: 6px;
+}
+
+#pesquisar {
+    border-right: 1px solid #d1d1d17c;
+}
+
+#limpar-input-pesquisa {
+    margin-right: 8px;
+}
+
+#filtrar {
+    margin-left: 10px;
+}
+
+.listagem-tarefas {
+    margin-left: 40px;
+}
+
+.listagem-tarefas > h3 {
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+    padding: 3px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.dados-tarefa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    transition: 0.3s;
+    margin-bottom: 7px;
+}
+
+.dados-tarefa h3 {
+    flex: 1;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.dados-tarefa button {
+    margin-left: 4px;
+}
+
+.done {
+    background-color: #137c13;
+    border-radius: 5px;
+    color: var(--color-secondary);
+}
+
+.done h3 {
+    text-decoration: line-through;
+    font-style: italic;
+    font-weight: 400;
+}
