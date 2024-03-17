@@ -67,7 +67,7 @@ form.addEventListener('submit', function (e) {
 })
 
 document.addEventListener('click', function (e) {
-    const target = e.target;  // Pegando o elemento que foi clicado
+    const target = e.target;  
     const parentElement = target.closest('div');
     let title;
 
@@ -76,7 +76,7 @@ document.addEventListener('click', function (e) {
     }
 
     if (target.classList.contains('checagem-tarefa')) {
-       parentElement.classList.toggle('done'); // Pode fazer a troca. Se clicar adiciona a classe, mas se "desclicar", retira a classe (toggle).
+       parentElement.classList.toggle('done'); 
     } 
     
     if (target.classList.contains('excluir-tarefa')) {
