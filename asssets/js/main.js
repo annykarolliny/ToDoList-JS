@@ -76,7 +76,7 @@ document.addEventListener('click', function (e) {
     }
 
     if (target.classList.contains('checagem-tarefa')) {
-       parentElement.classList.toggle('done'); 
+       parentElement.classList.toggle('done');  
     } 
     
     if (target.classList.contains('excluir-tarefa')) {
